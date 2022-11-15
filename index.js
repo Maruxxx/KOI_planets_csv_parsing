@@ -1,3 +1,4 @@
+// Modules that we are using in this project.
 const {parse} = require('csv-parse');
 const fs = require('fs');
 
@@ -11,7 +12,12 @@ function isHabitablePlanet(planet) {
         && planet['koi_prad'] < 1.6;
 }
 
-fs.createReadStream('cumulative_2022.11.14_17.37.43.csv')
+const csv_files = ['./csv/cumulative_2022.11.14_17.37.43.csv'];
+
+// Streaming and parsing data from csv.
+csv_files.forEach(file => {
+    
+    fs.createReadStream(file)
     .pipe(parse({
         comment: '#',
         columns: true,
@@ -24,6 +30,10 @@ fs.createReadStream('cumulative_2022.11.14_17.37.43.csv')
     .on('error', (err) => console.log(err))
 
     .on('end', () => {
-        console.log(habitablePlanets);
-        console.log(`There is ${habitablePlanets.length} habitable planets found!`);
+        console.log(habitablePlanets.map(p => {
+            return p['kepler_name']
+        }));
+        console.log(`${habitablePlanets.length} habitable planets found!`);
     });
+
+});
