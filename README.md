@@ -1,4 +1,4 @@
-# NASA_Kepler_objects
+# KOI_planets_csv_parsing
 Grabbing data from NASA EXO PLANETS ARCHIVE and csv parsing with nodejs!
 
     • Importing data from https://exoplanetarchive.ipac.caltech.edu/docs/data.html.
