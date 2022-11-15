@@ -1,0 +1,22 @@
+{
+  "name": "nasa_kepler_objects",
+  "version": "1.0.0",
+  "description": "CSV parser using node for arranging nasa kepler data imported!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maruxxx/NASA_Kepler_objects.git"
+  },
+  "author": "Marux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maruxxx/NASA_Kepler_objects/issues"
+  },
+  "homepage": "https://github.com/Maruxxx/NASA_Kepler_objects#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.2"
+  }
+}
