@@ -9,6 +9,8 @@ Grabbing data from NASA EXO PLANETS ARCHIVE and csv parsing with nodejs!
     How to use:
     • Clone it to your choosed directory.  
     • Run "npm install" to install the dependencies used in this project.
-    • Import csv data files to your project folder and make sure to edit the script while it matches your files.
+    • Import csv data files to your project folder and make sure to edit the script 
+    while it matches your files.
     
-This is a script to play around with the common NASA planets data and facilitate filtering and sorting.
+This is a script to play around with the common NASA planets data and facilitate 
+filtering and sorting.
